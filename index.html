@@ -22,10 +22,24 @@
     <meta name="twitter:description" content="Turn your fridge contents into recipe ideas with transparent AI impact tracking.">
 
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥬</text></svg>">
 
     <!-- Preconnect to API -->
     <link rel="preconnect" href="https://api.anthropic.com">
+
+    <!-- Critical CSS for dark theme -->
+    <style>
+      html, body {
+        background-color: #09090b;
+        color: #fafafa;
+        margin: 0;
+        padding: 0;
+      }
+      #root {
+        min-height: 100vh;
+        background-color: #09090b;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
