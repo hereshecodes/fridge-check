@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 
 const calculateImpact = (inputTokens, outputTokens) => {
   const totalTokens = inputTokens + outputTokens;
@@ -498,6 +499,8 @@ function App() {
             </p>
           </div>
         </footer>
+
+        <Analytics />
       </div>
     </div>
   )
